@@ -1,27 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>DevOps Project</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>My Docker Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+
+    header {
+      padding: 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 25px;
+      margin: 20px auto;
+      width: 80%;
+      max-width: 500px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    button {
+      padding: 12px 25px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: #00c6ff;
+      color: black;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #00a3d9;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.3);
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
+
   <header>
-    <h1>🚀 DevOps CI/CD Website</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <h1>🚀 My Docker Website</h1>
+    <p>Deployed using Docker, GitHub & Jenkins</p>
   </header>
 
   <section>
-    <h2>Welcome</h2>
-    <p>This website is automatically deployed using GitHub, Jenkins, Docker, and AWS EC2.</p>
+    <div class="card">
+      <h2>👋 Hello!</h2>
+      <p>
+        This website is built using HTML & CSS and deployed using Docker.
+      </p>
+      <p>
+        If you can see this page, your Docker container is working perfectly 🎉
+      </p>
+      <button onclick="showMessage()">Click Me</button>
+    </div>
   </section>
 
   <footer>
-    <p>© 2026 DevOps Project</p>
+    © 2026 | Built by Khansa Noor
   </footer>
+
+  <script>
+    function showMessage() {
+      alert("🎉 Docker website is running successfully!");
+    }
+  </script>
+
 </body>
 </html>
 
+
+ 
